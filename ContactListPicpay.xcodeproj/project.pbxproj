@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13ABE124287743AB00907DD4 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */; };
+		13FA81C12874D45800E77A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81C02874D45800E77A25 /* AppDelegate.swift */; };
+		13FA81C32874D45800E77A25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81C22874D45800E77A25 /* SceneDelegate.swift */; };
+		13FA81C52874D45800E77A25 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81C42874D45800E77A25 /* ContactViewController.swift */; };
+		13FA81C82874D45800E77A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FA81C62874D45800E77A25 /* Main.storyboard */; };
+		13FA81CA2874D45D00E77A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FA81C92874D45D00E77A25 /* Assets.xcassets */; };
+		13FA81CD2874D45D00E77A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FA81CB2874D45D00E77A25 /* LaunchScreen.storyboard */; };
+		13FA81D82874D45D00E77A25 /* ContactListPicpayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81D72874D45D00E77A25 /* ContactListPicpayTests.swift */; };
+		13FA81E22874D45D00E77A25 /* ContactListPicpayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81E12874D45D00E77A25 /* ContactListPicpayUITests.swift */; };
+		13FA81E42874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81E32874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13FA81D42874D45D00E77A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13FA81B52874D45800E77A25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13FA81BC2874D45800E77A25;
+			remoteInfo = ContactListPicpay;
+		};
+		13FA81DE2874D45D00E77A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13FA81B52874D45800E77A25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13FA81BC2874D45800E77A25;
+			remoteInfo = ContactListPicpay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactListTableViewCell.swift; path = Cells/ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		13FA81BD2874D45800E77A25 /* ContactListPicpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListPicpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FA81C02874D45800E77A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13FA81C22874D45800E77A25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		13FA81C42874D45800E77A25 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		13FA81C72874D45800E77A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13FA81C92874D45D00E77A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13FA81CC2874D45D00E77A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13FA81CE2874D45D00E77A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13FA81D32874D45D00E77A25 /* ContactListPicpayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListPicpayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FA81D72874D45D00E77A25 /* ContactListPicpayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPicpayTests.swift; sourceTree = "<group>"; };
+		13FA81DD2874D45D00E77A25 /* ContactListPicpayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListPicpayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FA81E12874D45D00E77A25 /* ContactListPicpayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPicpayUITests.swift; sourceTree = "<group>"; };
+		13FA81E32874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPicpayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13FA81BA2874D45800E77A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FA81D02874D45D00E77A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FA81DA2874D45D00E77A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13FA81B42874D45800E77A25 = {
+			isa = PBXGroup;
+			children = (
+				13FA81BF2874D45800E77A25 /* ContactListPicpay */,
+				13FA81D62874D45D00E77A25 /* ContactListPicpayTests */,
+				13FA81E02874D45D00E77A25 /* ContactListPicpayUITests */,
+				13FA81BE2874D45800E77A25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13FA81BE2874D45800E77A25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13FA81BD2874D45800E77A25 /* ContactListPicpay.app */,
+				13FA81D32874D45D00E77A25 /* ContactListPicpayTests.xctest */,
+				13FA81DD2874D45D00E77A25 /* ContactListPicpayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13FA81BF2874D45800E77A25 /* ContactListPicpay */ = {
+			isa = PBXGroup;
+			children = (
+				13FA81C02874D45800E77A25 /* AppDelegate.swift */,
+				13FA81C22874D45800E77A25 /* SceneDelegate.swift */,
+				13FA81C42874D45800E77A25 /* ContactViewController.swift */,
+				13FA81C62874D45800E77A25 /* Main.storyboard */,
+				13FA81C92874D45D00E77A25 /* Assets.xcassets */,
+				13FA81CB2874D45D00E77A25 /* LaunchScreen.storyboard */,
+				13FA81CE2874D45D00E77A25 /* Info.plist */,
+				13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */,
+			);
+			path = ContactListPicpay;
+			sourceTree = "<group>";
+		};
+		13FA81D62874D45D00E77A25 /* ContactListPicpayTests */ = {
+			isa = PBXGroup;
+			children = (
+				13FA81D72874D45D00E77A25 /* ContactListPicpayTests.swift */,
+			);
+			path = ContactListPicpayTests;
+			sourceTree = "<group>";
+		};
+		13FA81E02874D45D00E77A25 /* ContactListPicpayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13FA81E12874D45D00E77A25 /* ContactListPicpayUITests.swift */,
+				13FA81E32874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift */,
+			);
+			path = ContactListPicpayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13FA81BC2874D45800E77A25 /* ContactListPicpay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FA81E72874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpay" */;
+			buildPhases = (
+				13FA81B92874D45800E77A25 /* Sources */,
+				13FA81BA2874D45800E77A25 /* Frameworks */,
+				13FA81BB2874D45800E77A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactListPicpay;
+			productName = ContactListPicpay;
+			productReference = 13FA81BD2874D45800E77A25 /* ContactListPicpay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13FA81D22874D45D00E77A25 /* ContactListPicpayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FA81EA2874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpayTests" */;
+			buildPhases = (
+				13FA81CF2874D45D00E77A25 /* Sources */,
+				13FA81D02874D45D00E77A25 /* Frameworks */,
+				13FA81D12874D45D00E77A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13FA81D52874D45D00E77A25 /* PBXTargetDependency */,
+			);
+			name = ContactListPicpayTests;
+			productName = ContactListPicpayTests;
+			productReference = 13FA81D32874D45D00E77A25 /* ContactListPicpayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13FA81DC2874D45D00E77A25 /* ContactListPicpayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FA81ED2874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpayUITests" */;
+			buildPhases = (
+				13FA81D92874D45D00E77A25 /* Sources */,
+				13FA81DA2874D45D00E77A25 /* Frameworks */,
+				13FA81DB2874D45D00E77A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13FA81DF2874D45D00E77A25 /* PBXTargetDependency */,
+			);
+			name = ContactListPicpayUITests;
+			productName = ContactListPicpayUITests;
+			productReference = 13FA81DD2874D45D00E77A25 /* ContactListPicpayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13FA81B52874D45800E77A25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					13FA81BC2874D45800E77A25 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					13FA81D22874D45D00E77A25 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 13FA81BC2874D45800E77A25;
+					};
+					13FA81DC2874D45D00E77A25 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 13FA81BC2874D45800E77A25;
+					};
+				};
+			};
+			buildConfigurationList = 13FA81B82874D45800E77A25 /* Build configuration list for PBXProject "ContactListPicpay" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13FA81B42874D45800E77A25;
+			productRefGroup = 13FA81BE2874D45800E77A25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13FA81BC2874D45800E77A25 /* ContactListPicpay */,
+				13FA81D22874D45D00E77A25 /* ContactListPicpayTests */,
+				13FA81DC2874D45D00E77A25 /* ContactListPicpayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13FA81BB2874D45800E77A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FA81CD2874D45D00E77A25 /* LaunchScreen.storyboard in Resources */,
+				13FA81CA2874D45D00E77A25 /* Assets.xcassets in Resources */,
+				13FA81C82874D45800E77A25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FA81D12874D45D00E77A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FA81DB2874D45D00E77A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13FA81B92874D45800E77A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13ABE124287743AB00907DD4 /* ContactListTableViewCell.swift in Sources */,
+				13FA81C52874D45800E77A25 /* ContactViewController.swift in Sources */,
+				13FA81C12874D45800E77A25 /* AppDelegate.swift in Sources */,
+				13FA81C32874D45800E77A25 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FA81CF2874D45D00E77A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FA81D82874D45D00E77A25 /* ContactListPicpayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FA81D92874D45D00E77A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FA81E22874D45D00E77A25 /* ContactListPicpayUITests.swift in Sources */,
+				13FA81E42874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13FA81D52874D45D00E77A25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13FA81BC2874D45800E77A25 /* ContactListPicpay */;
+			targetProxy = 13FA81D42874D45D00E77A25 /* PBXContainerItemProxy */;
+		};
+		13FA81DF2874D45D00E77A25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13FA81BC2874D45800E77A25 /* ContactListPicpay */;
+			targetProxy = 13FA81DE2874D45D00E77A25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13FA81C62874D45800E77A25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13FA81C72874D45800E77A25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13FA81CB2874D45D00E77A25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13FA81CC2874D45D00E77A25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13FA81E52874D45D00E77A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13FA81E62874D45D00E77A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13FA81E82874D45D00E77A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContactListPicpay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.picpay.ContactListPicpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13FA81E92874D45D00E77A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContactListPicpay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.picpay.ContactListPicpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13FA81EB2874D45D00E77A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.picpay.ContactListPicpayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactListPicpay.app/ContactListPicpay";
+			};
+			name = Debug;
+		};
+		13FA81EC2874D45D00E77A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.picpay.ContactListPicpayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactListPicpay.app/ContactListPicpay";
+			};
+			name = Release;
+		};
+		13FA81EE2874D45D00E77A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.picpay.ContactListPicpayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ContactListPicpay;
+			};
+			name = Debug;
+		};
+		13FA81EF2874D45D00E77A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.picpay.ContactListPicpayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ContactListPicpay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13FA81B82874D45800E77A25 /* Build configuration list for PBXProject "ContactListPicpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FA81E52874D45D00E77A25 /* Debug */,
+				13FA81E62874D45D00E77A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13FA81E72874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FA81E82874D45D00E77A25 /* Debug */,
+				13FA81E92874D45D00E77A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13FA81EA2874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FA81EB2874D45D00E77A25 /* Debug */,
+				13FA81EC2874D45D00E77A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13FA81ED2874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FA81EE2874D45D00E77A25 /* Debug */,
+				13FA81EF2874D45D00E77A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13FA81B52874D45800E77A25 /* Project object */;
+}
