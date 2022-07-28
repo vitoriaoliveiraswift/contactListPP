@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1325D13428915BB000CBB547 /* LoadingViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325D13328915BB000CBB547 /* LoadingViewContoller.swift */; };
+		1325D1362891B3AA00CBB547 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325D1352891B3AA00CBB547 /* ErrorViewController.swift */; };
 		13ABE124287743AB00907DD4 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */; };
 		13FA81C12874D45800E77A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81C02874D45800E77A25 /* AppDelegate.swift */; };
 		13FA81C32874D45800E77A25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81C22874D45800E77A25 /* SceneDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1325D13328915BB000CBB547 /* LoadingViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewContoller.swift; sourceTree = "<group>"; };
+		1325D1352891B3AA00CBB547 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactListTableViewCell.swift; path = Cells/ContactListTableViewCell.swift; sourceTree = "<group>"; };
 		13FA81BD2874D45800E77A25 /* ContactListPicpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListPicpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FA81C02874D45800E77A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				13FA81CB2874D45D00E77A25 /* LaunchScreen.storyboard */,
 				13FA81CE2874D45D00E77A25 /* Info.plist */,
 				13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */,
+				1325D13328915BB000CBB547 /* LoadingViewContoller.swift */,
+				1325D1352891B3AA00CBB547 /* ErrorViewController.swift */,
 			);
 			path = ContactListPicpay;
 			sourceTree = "<group>";
@@ -262,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13ABE124287743AB00907DD4 /* ContactListTableViewCell.swift in Sources */,
+				1325D1362891B3AA00CBB547 /* ErrorViewController.swift in Sources */,
+				1325D13428915BB000CBB547 /* LoadingViewContoller.swift in Sources */,
 				13FA81C52874D45800E77A25 /* ContactViewController.swift in Sources */,
 				13FA81C12874D45800E77A25 /* AppDelegate.swift in Sources */,
 				13FA81C32874D45800E77A25 /* SceneDelegate.swift in Sources */,
