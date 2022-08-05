@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1325D13428915BB000CBB547 /* LoadingViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325D13328915BB000CBB547 /* LoadingViewContoller.swift */; };
-		1325D1362891B3AA00CBB547 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325D1352891B3AA00CBB547 /* ErrorViewController.swift */; };
-		13ABE124287743AB00907DD4 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */; };
-		13FA81C12874D45800E77A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81C02874D45800E77A25 /* AppDelegate.swift */; };
-		13FA81C32874D45800E77A25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81C22874D45800E77A25 /* SceneDelegate.swift */; };
-		13FA81C52874D45800E77A25 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81C42874D45800E77A25 /* ContactViewController.swift */; };
-		13FA81C82874D45800E77A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FA81C62874D45800E77A25 /* Main.storyboard */; };
-		13FA81CA2874D45D00E77A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FA81C92874D45D00E77A25 /* Assets.xcassets */; };
-		13FA81CD2874D45D00E77A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FA81CB2874D45D00E77A25 /* LaunchScreen.storyboard */; };
 		13FA81D82874D45D00E77A25 /* ContactListPicpayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81D72874D45D00E77A25 /* ContactListPicpayTests.swift */; };
 		13FA81E22874D45D00E77A25 /* ContactListPicpayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81E12874D45D00E77A25 /* ContactListPicpayUITests.swift */; };
 		13FA81E42874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81E32874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift */; };
+		2EAB98F6289AF7F700B31E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB98F5289AF7F700B31E7B /* Assets.xcassets */; };
+		2EAB98FC289AF80400B31E7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB98F8289AF80400B31E7B /* LaunchScreen.storyboard */; };
+		2EAB98FD289AF80400B31E7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB98FA289AF80400B31E7B /* AppDelegate.swift */; };
+		2EAB98FE289AF80400B31E7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB98FB289AF80400B31E7B /* SceneDelegate.swift */; };
+		2EAB990A289AF82300B31E7B /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB9902289AF82300B31E7B /* ContactListTableViewCell.swift */; };
+		2EAB990B289AF82300B31E7B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB9903289AF82300B31E7B /* ContactViewController.swift */; };
+		2EAB990C289AF82300B31E7B /* LoadingViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB9906289AF82300B31E7B /* LoadingViewContoller.swift */; };
+		2EAB990D289AF82300B31E7B /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB9908289AF82300B31E7B /* ErrorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +38,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1325D13328915BB000CBB547 /* LoadingViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewContoller.swift; sourceTree = "<group>"; };
-		1325D1352891B3AA00CBB547 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
-		13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactListTableViewCell.swift; path = Cells/ContactListTableViewCell.swift; sourceTree = "<group>"; };
 		13FA81BD2874D45800E77A25 /* ContactListPicpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListPicpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13FA81C02874D45800E77A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13FA81C22874D45800E77A25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13FA81C42874D45800E77A25 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		13FA81C72874D45800E77A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13FA81C92874D45D00E77A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		13FA81CC2874D45D00E77A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13FA81CE2874D45D00E77A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13FA81D32874D45D00E77A25 /* ContactListPicpayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListPicpayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FA81D72874D45D00E77A25 /* ContactListPicpayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPicpayTests.swift; sourceTree = "<group>"; };
 		13FA81DD2874D45D00E77A25 /* ContactListPicpayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListPicpayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FA81E12874D45D00E77A25 /* ContactListPicpayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPicpayUITests.swift; sourceTree = "<group>"; };
 		13FA81E32874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPicpayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2EAB98F5289AF7F700B31E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EAB98F9289AF80400B31E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EAB98FA289AF80400B31E7B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EAB98FB289AF80400B31E7B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2EAB9902289AF82300B31E7B /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		2EAB9903289AF82300B31E7B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		2EAB9906289AF82300B31E7B /* LoadingViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewContoller.swift; sourceTree = "<group>"; };
+		2EAB9908289AF82300B31E7B /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +103,10 @@
 		13FA81BF2874D45800E77A25 /* ContactListPicpay */ = {
 			isa = PBXGroup;
 			children = (
-				13FA81C02874D45800E77A25 /* AppDelegate.swift */,
-				13FA81C22874D45800E77A25 /* SceneDelegate.swift */,
-				13FA81C42874D45800E77A25 /* ContactViewController.swift */,
-				13FA81C62874D45800E77A25 /* Main.storyboard */,
-				13FA81C92874D45D00E77A25 /* Assets.xcassets */,
-				13FA81CB2874D45D00E77A25 /* LaunchScreen.storyboard */,
+				2EAB98F7289AF80400B31E7B /* Application */,
+				2EAB98F4289AF7F700B31E7B /* Resources */,
+				2EAB98FF289AF82300B31E7B /* Sources */,
 				13FA81CE2874D45D00E77A25 /* Info.plist */,
-				13ABE123287743AB00907DD4 /* ContactListTableViewCell.swift */,
-				1325D13328915BB000CBB547 /* LoadingViewContoller.swift */,
-				1325D1352891B3AA00CBB547 /* ErrorViewController.swift */,
 			);
 			path = ContactListPicpay;
 			sourceTree = "<group>";
@@ -134,6 +126,83 @@
 				13FA81E32874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift */,
 			);
 			path = ContactListPicpayUITests;
+			sourceTree = "<group>";
+		};
+		2EAB98F4289AF7F700B31E7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB98F5289AF7F700B31E7B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2EAB98F7289AF80400B31E7B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB98F8289AF80400B31E7B /* LaunchScreen.storyboard */,
+				2EAB98FA289AF80400B31E7B /* AppDelegate.swift */,
+				2EAB98FB289AF80400B31E7B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2EAB98FF289AF82300B31E7B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB9900289AF82300B31E7B /* Contact */,
+				2EAB9904289AF82300B31E7B /* Loading */,
+				2EAB9907289AF82300B31E7B /* Error */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2EAB9900289AF82300B31E7B /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB9901289AF82300B31E7B /* Cells */,
+				2EAB9903289AF82300B31E7B /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		2EAB9901289AF82300B31E7B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB9902289AF82300B31E7B /* ContactListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2EAB9904289AF82300B31E7B /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB9905289AF82300B31E7B /* View */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		2EAB9905289AF82300B31E7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB9906289AF82300B31E7B /* LoadingViewContoller.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2EAB9907289AF82300B31E7B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB9909289AF82300B31E7B /* View */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		2EAB9909289AF82300B31E7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB9908289AF82300B31E7B /* ErrorViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,9 +309,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13FA81CD2874D45D00E77A25 /* LaunchScreen.storyboard in Resources */,
-				13FA81CA2874D45D00E77A25 /* Assets.xcassets in Resources */,
-				13FA81C82874D45800E77A25 /* Main.storyboard in Resources */,
+				2EAB98FC289AF80400B31E7B /* LaunchScreen.storyboard in Resources */,
+				2EAB98F6289AF7F700B31E7B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13ABE124287743AB00907DD4 /* ContactListTableViewCell.swift in Sources */,
-				1325D1362891B3AA00CBB547 /* ErrorViewController.swift in Sources */,
-				1325D13428915BB000CBB547 /* LoadingViewContoller.swift in Sources */,
-				13FA81C52874D45800E77A25 /* ContactViewController.swift in Sources */,
-				13FA81C12874D45800E77A25 /* AppDelegate.swift in Sources */,
-				13FA81C32874D45800E77A25 /* SceneDelegate.swift in Sources */,
+				2EAB990D289AF82300B31E7B /* ErrorViewController.swift in Sources */,
+				2EAB990A289AF82300B31E7B /* ContactListTableViewCell.swift in Sources */,
+				2EAB990C289AF82300B31E7B /* LoadingViewContoller.swift in Sources */,
+				2EAB98FD289AF80400B31E7B /* AppDelegate.swift in Sources */,
+				2EAB98FE289AF80400B31E7B /* SceneDelegate.swift in Sources */,
+				2EAB990B289AF82300B31E7B /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,18 +377,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		13FA81C62874D45800E77A25 /* Main.storyboard */ = {
+		2EAB98F8289AF80400B31E7B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				13FA81C72874D45800E77A25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		13FA81CB2874D45D00E77A25 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13FA81CC2874D45D00E77A25 /* Base */,
+				2EAB98F9289AF80400B31E7B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -453,9 +513,9 @@
 				INFOPLIST_FILE = ContactListPicpay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +540,9 @@
 				INFOPLIST_FILE = ContactListPicpay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
