@@ -6,8 +6,7 @@ target 'ContactListPicpay' do
 
   # Pods for ContactListPicpay
 
- 	pod 'Alamofire', '~> 5.6' 
-	pod 'SnapKit', '~> 5.0.0'
+	pod 'SnapKit', '~> 5.6.0'
 
   target 'ContactListPicpayTests' do
     inherit! :search_paths

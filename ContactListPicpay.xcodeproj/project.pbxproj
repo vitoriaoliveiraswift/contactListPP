@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1126FBF8709B07154936473C /* Pods_ContactListPicpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8C9F28CA31A32A0C5D456B /* Pods_ContactListPicpay.framework */; };
+		137F8CE528D4F225003A5AA0 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F8CE428D4F225003A5AA0 /* ContactsModel.swift */; };
+		13CEBAD728B7E61A008C0FEE /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CEBAD628B7E61A008C0FEE /* ContactService.swift */; };
 		13F7265D28A18EA900F71262 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7265C28A18EA900F71262 /* ContactListViewController.swift */; };
 		13F7265F28A2DE9200F71262 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7265E28A2DE9200F71262 /* ContactCell.swift */; };
 		13FA81D82874D45D00E77A25 /* ContactListPicpayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA81D72874D45D00E77A25 /* ContactListPicpayTests.swift */; };
@@ -18,6 +21,8 @@
 		2EAB98FE289AF80400B31E7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB98FB289AF80400B31E7B /* SceneDelegate.swift */; };
 		2EAB990C289AF82300B31E7B /* LoadingViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB9906289AF82300B31E7B /* LoadingViewContoller.swift */; };
 		2EAB990D289AF82300B31E7B /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB9908289AF82300B31E7B /* ErrorViewController.swift */; };
+		4E0478D82DE7172C1A4F3244 /* Pods_ContactListPicpayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56A629219AAFE6F0A36660F /* Pods_ContactListPicpayTests.framework */; };
+		A7B360348FA9E0B6CB3974F1 /* Pods_ContactListPicpay_ContactListPicpayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D355B2C0EB4689AA409752B /* Pods_ContactListPicpay_ContactListPicpayUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		137F8CE428D4F225003A5AA0 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		13CEBAD628B7E61A008C0FEE /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
 		13F7265C28A18EA900F71262 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		13F7265E28A2DE9200F71262 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		13FA81BD2874D45800E77A25 /* ContactListPicpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListPicpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,12 +54,21 @@
 		13FA81DD2874D45D00E77A25 /* ContactListPicpayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListPicpayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FA81E12874D45D00E77A25 /* ContactListPicpayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPicpayUITests.swift; sourceTree = "<group>"; };
 		13FA81E32874D45D00E77A25 /* ContactListPicpayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPicpayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		154DF545B06A6F298FA4B36D /* Pods-ContactListPicpayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactListPicpayTests.release.xcconfig"; path = "Target Support Files/Pods-ContactListPicpayTests/Pods-ContactListPicpayTests.release.xcconfig"; sourceTree = "<group>"; };
 		2EAB98F5289AF7F700B31E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EAB98F9289AF80400B31E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EAB98FA289AF80400B31E7B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EAB98FB289AF80400B31E7B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2EAB9906289AF82300B31E7B /* LoadingViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewContoller.swift; sourceTree = "<group>"; };
 		2EAB9908289AF82300B31E7B /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		762530C3899CAC73AD5D40EF /* Pods-ContactListPicpay-ContactListPicpayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactListPicpay-ContactListPicpayUITests.debug.xcconfig"; path = "Target Support Files/Pods-ContactListPicpay-ContactListPicpayUITests/Pods-ContactListPicpay-ContactListPicpayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B8C9F28CA31A32A0C5D456B /* Pods_ContactListPicpay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactListPicpay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		832E5A3D8B3130E791FEFA36 /* Pods-ContactListPicpayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactListPicpayTests.debug.xcconfig"; path = "Target Support Files/Pods-ContactListPicpayTests/Pods-ContactListPicpayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D355B2C0EB4689AA409752B /* Pods_ContactListPicpay_ContactListPicpayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactListPicpay_ContactListPicpayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E34FD93E3CDDA95891D8DB6 /* Pods-ContactListPicpay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactListPicpay.release.xcconfig"; path = "Target Support Files/Pods-ContactListPicpay/Pods-ContactListPicpay.release.xcconfig"; sourceTree = "<group>"; };
+		A56A629219AAFE6F0A36660F /* Pods_ContactListPicpayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactListPicpayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FB80C4CA3542719488BB01 /* Pods-ContactListPicpay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactListPicpay.debug.xcconfig"; path = "Target Support Files/Pods-ContactListPicpay/Pods-ContactListPicpay.debug.xcconfig"; sourceTree = "<group>"; };
+		CD7DC02D9354CCE199EC0948 /* Pods-ContactListPicpay-ContactListPicpayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactListPicpay-ContactListPicpayUITests.release.xcconfig"; path = "Target Support Files/Pods-ContactListPicpay-ContactListPicpayUITests/Pods-ContactListPicpay-ContactListPicpayUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1126FBF8709B07154936473C /* Pods_ContactListPicpay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0478D82DE7172C1A4F3244 /* Pods_ContactListPicpayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +92,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B360348FA9E0B6CB3974F1 /* Pods_ContactListPicpay_ContactListPicpayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		137F8CE328D4F1FB003A5AA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				137F8CE428D4F225003A5AA0 /* ContactsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13CEBAD528B7E591008C0FEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				13CEBAD628B7E61A008C0FEE /* ContactService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		13FA81B42874D45800E77A25 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +122,8 @@
 				13FA81D62874D45D00E77A25 /* ContactListPicpayTests */,
 				13FA81E02874D45D00E77A25 /* ContactListPicpayUITests */,
 				13FA81BE2874D45800E77A25 /* Products */,
+				7114025284C6D6BCFF09A99C /* Pods */,
+				3DFA2090250CF977B9EE9039 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +196,8 @@
 		2EAB9900289AF82300B31E7B /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				137F8CE328D4F1FB003A5AA0 /* Model */,
+				13CEBAD528B7E591008C0FEE /* Services */,
 				2EAB9901289AF82300B31E7B /* Cells */,
 				13F7265C28A18EA900F71262 /* ContactListViewController.swift */,
 				13F7265E28A2DE9200F71262 /* ContactCell.swift */,
@@ -205,6 +244,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3DFA2090250CF977B9EE9039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B8C9F28CA31A32A0C5D456B /* Pods_ContactListPicpay.framework */,
+				8D355B2C0EB4689AA409752B /* Pods_ContactListPicpay_ContactListPicpayUITests.framework */,
+				A56A629219AAFE6F0A36660F /* Pods_ContactListPicpayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7114025284C6D6BCFF09A99C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9FB80C4CA3542719488BB01 /* Pods-ContactListPicpay.debug.xcconfig */,
+				9E34FD93E3CDDA95891D8DB6 /* Pods-ContactListPicpay.release.xcconfig */,
+				762530C3899CAC73AD5D40EF /* Pods-ContactListPicpay-ContactListPicpayUITests.debug.xcconfig */,
+				CD7DC02D9354CCE199EC0948 /* Pods-ContactListPicpay-ContactListPicpayUITests.release.xcconfig */,
+				832E5A3D8B3130E791FEFA36 /* Pods-ContactListPicpayTests.debug.xcconfig */,
+				154DF545B06A6F298FA4B36D /* Pods-ContactListPicpayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13FA81E72874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpay" */;
 			buildPhases = (
+				C685CC9993DCA5075457EBE3 /* [CP] Check Pods Manifest.lock */,
 				13FA81B92874D45800E77A25 /* Sources */,
 				13FA81BA2874D45800E77A25 /* Frameworks */,
 				13FA81BB2874D45800E77A25 /* Resources */,
+				71E62153D20474DC449F25AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13FA81EA2874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpayTests" */;
 			buildPhases = (
+				B0D2E302AD09F39368ABA205 /* [CP] Check Pods Manifest.lock */,
 				13FA81CF2874D45D00E77A25 /* Sources */,
 				13FA81D02874D45D00E77A25 /* Frameworks */,
 				13FA81D12874D45D00E77A25 /* Resources */,
@@ -247,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13FA81ED2874D45D00E77A25 /* Build configuration list for PBXNativeTarget "ContactListPicpayUITests" */;
 			buildPhases = (
+				A6B1216BA9590E24D7964D16 /* [CP] Check Pods Manifest.lock */,
 				13FA81D92874D45D00E77A25 /* Sources */,
 				13FA81DA2874D45D00E77A25 /* Frameworks */,
 				13FA81DB2874D45D00E77A25 /* Resources */,
+				0DE93D469D904D1400727439 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +397,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DE93D469D904D1400727439 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactListPicpay-ContactListPicpayUITests/Pods-ContactListPicpay-ContactListPicpayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactListPicpay-ContactListPicpayUITests/Pods-ContactListPicpay-ContactListPicpayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ContactListPicpay-ContactListPicpayUITests/Pods-ContactListPicpay-ContactListPicpayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71E62153D20474DC449F25AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactListPicpay/Pods-ContactListPicpay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactListPicpay/Pods-ContactListPicpay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ContactListPicpay/Pods-ContactListPicpay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B1216BA9590E24D7964D16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactListPicpay-ContactListPicpayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0D2E302AD09F39368ABA205 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactListPicpayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C685CC9993DCA5075457EBE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactListPicpay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13FA81B92874D45800E77A25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -338,8 +508,10 @@
 				13F7265F28A2DE9200F71262 /* ContactCell.swift in Sources */,
 				13F7265D28A18EA900F71262 /* ContactListViewController.swift in Sources */,
 				2EAB990D289AF82300B31E7B /* ErrorViewController.swift in Sources */,
+				13CEBAD728B7E61A008C0FEE /* ContactService.swift in Sources */,
 				2EAB990C289AF82300B31E7B /* LoadingViewContoller.swift in Sources */,
 				2EAB98FD289AF80400B31E7B /* AppDelegate.swift in Sources */,
+				137F8CE528D4F225003A5AA0 /* ContactsModel.swift in Sources */,
 				2EAB98FE289AF80400B31E7B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +676,7 @@
 		};
 		13FA81E82874D45D00E77A25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FB80C4CA3542719488BB01 /* Pods-ContactListPicpay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,6 +704,7 @@
 		};
 		13FA81E92874D45D00E77A25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E34FD93E3CDDA95891D8DB6 /* Pods-ContactListPicpay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -558,6 +732,7 @@
 		};
 		13FA81EB2874D45D00E77A25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832E5A3D8B3130E791FEFA36 /* Pods-ContactListPicpayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -577,6 +752,7 @@
 		};
 		13FA81EC2874D45D00E77A25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 154DF545B06A6F298FA4B36D /* Pods-ContactListPicpayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,6 +772,7 @@
 		};
 		13FA81EE2874D45D00E77A25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762530C3899CAC73AD5D40EF /* Pods-ContactListPicpay-ContactListPicpayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -613,6 +790,7 @@
 		};
 		13FA81EF2874D45D00E77A25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7DC02D9354CCE199EC0948 /* Pods-ContactListPicpay-ContactListPicpayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
