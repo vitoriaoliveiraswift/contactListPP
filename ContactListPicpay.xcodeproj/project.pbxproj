@@ -13,6 +13,8 @@
 		13906E9F28E771E600C853BE /* ContactsInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13906E9E28E771E600C853BE /* ContactsInformationModel.swift */; };
 		13906EA328EC705300C853BE /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13906EA228EC705300C853BE /* DetailService.swift */; };
 		13906EAA28F5A5F000C853BE /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13906EA928F5A5F000C853BE /* UIImageView+Extension.swift */; };
+		13906EAE2901888600C853BE /* AddContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13906EAD2901888600C853BE /* AddContactsViewController.swift */; };
+		13906EB3291147B700C853BE /* AddContactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13906EB2291147B700C853BE /* AddContactsService.swift */; };
 		1397FE3128DA344C002C6268 /* DetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397FE3028DA344C002C6268 /* DetailScreenViewController.swift */; };
 		13CEBAD728B7E61A008C0FEE /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CEBAD628B7E61A008C0FEE /* ContactService.swift */; };
 		13F7265D28A18EA900F71262 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7265C28A18EA900F71262 /* ContactListViewController.swift */; };
@@ -53,6 +55,8 @@
 		13906E9E28E771E600C853BE /* ContactsInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsInformationModel.swift; sourceTree = "<group>"; };
 		13906EA228EC705300C853BE /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
 		13906EA928F5A5F000C853BE /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		13906EAD2901888600C853BE /* AddContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsViewController.swift; sourceTree = "<group>"; };
+		13906EB2291147B700C853BE /* AddContactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsService.swift; sourceTree = "<group>"; };
 		1397FE3028DA344C002C6268 /* DetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewController.swift; sourceTree = "<group>"; };
 		13CEBAD628B7E61A008C0FEE /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
 		13F7265C28A18EA900F71262 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +169,31 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		13906EAB290186EF00C853BE /* AddContacts */ = {
+			isa = PBXGroup;
+			children = (
+				13906EB12911479100C853BE /* Services */,
+				13906EAC2901885C00C853BE /* View */,
+			);
+			path = AddContacts;
+			sourceTree = "<group>";
+		};
+		13906EAC2901885C00C853BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13906EAD2901888600C853BE /* AddContactsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13906EB12911479100C853BE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				13906EB2291147B700C853BE /* AddContactsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		1397FE2F28DA340C002C6268 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				13906EA828F5A5A900C853BE /* Helpers */,
+				13906EAB290186EF00C853BE /* AddContacts */,
 				1397FE2F28DA340C002C6268 /* Detail */,
 				2EAB9900289AF82300B31E7B /* List Contacts */,
 				2EAB9904289AF82300B31E7B /* Loading */,
@@ -577,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F7265F28A2DE9200F71262 /* ContactCell.swift in Sources */,
+				13906EAE2901888600C853BE /* AddContactsViewController.swift in Sources */,
 				13906EAA28F5A5F000C853BE /* UIImageView+Extension.swift in Sources */,
 				13F7265D28A18EA900F71262 /* ContactListViewController.swift in Sources */,
 				2EAB990D289AF82300B31E7B /* ErrorViewController.swift in Sources */,
@@ -586,6 +617,7 @@
 				2EAB98FD289AF80400B31E7B /* AppDelegate.swift in Sources */,
 				13906EA328EC705300C853BE /* DetailService.swift in Sources */,
 				1397FE3128DA344C002C6268 /* DetailScreenViewController.swift in Sources */,
+				13906EB3291147B700C853BE /* AddContactsService.swift in Sources */,
 				137F8CE528D4F225003A5AA0 /* ContactsModel.swift in Sources */,
 				13906E9F28E771E600C853BE /* ContactsInformationModel.swift in Sources */,
 				2EAB98FE289AF80400B31E7B /* SceneDelegate.swift in Sources */,
