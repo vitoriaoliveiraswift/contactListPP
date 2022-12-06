@@ -5,9 +5,17 @@ final class ContactListViewControler: UIViewController {
     
     private var contacts: [ContactsModel] = []
     
+    private lazy var loadingView: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        indicator.startAnimating()
+        indicator.color = .black
+        indicator.isHidden = true
+        indicator.stopAnimating()
+        return indicator
+    }()
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        //tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(ContactCell.self, forCellReuseIdentifier: "contactCell")
         return tableView
     }()
@@ -19,7 +27,7 @@ final class ContactListViewControler: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = .white
+        view.backgroundColor = .white
         addSubviews()
         makeConstraints()
         makeRequest()
@@ -27,26 +35,47 @@ final class ContactListViewControler: UIViewController {
     }
     private func addSubviews() {
         view.addSubview(tableView)
+        view.addSubview(loadingView)
     }
     private func makeConstraints() {
         constraintTableView()
+        constraintLoadingView()
     }
     private func constraintTableView() {
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
     }
+    private func constraintLoadingView() {
+        loadingView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+    private func showLoading(isActived: Bool) {
+        tableView.isHidden = isActived
+        loadingView.isHidden = !tableView.isHidden
+        if isActived {
+            loadingView.startAnimating()
+        } else {
+            loadingView.stopAnimating()
+        }
+    }
     private func makeRequest() {
         let service = ContactService()
+        
+        showLoading(isActived: true)
+        
         service.getContacts { [weak self] result in
             switch result {
             case let .success(contacts):
                 self?.contacts = contacts
                 DispatchQueue.main.async {
                     self?.tableView.reloadData()
+                    self?.showLoading(isActived: false)
                 }
             case .failure(_):
                 print("deu erro")
+                self?.showLoading(isActived: false)
             }
         }
     }
