@@ -11,6 +11,8 @@ class DetailScreenViewController: UIViewController {
         image.contentMode = UIView.ContentMode.scaleAspectFill
         image.layer.cornerRadius = 70 //pesquisar calculo radius de acordo com largura e altura
         image.clipsToBounds = true
+        image.layer.borderColor = UIColor.gray.cgColor
+        image.layer.borderWidth = 1
         return image
     }()
     private var labelName: UILabel = {
@@ -73,12 +75,6 @@ class DetailScreenViewController: UIViewController {
         button.addTarget(self, action: #selector(onSharePress), for: .touchUpInside)
         return button
     }()
-    //    @objc private func actionEncaminhar() {
-    //        //let teste = testeViewController()
-    //        //testar navigation
-    //        //self.navigationController?.pushViewController(teste, animated: true)
-    //        self.navigationController?.present(teste, animated: true)
-    //    }
     
     private lazy var tableViewDetail: UITableView = {
         let table = UITableView(frame: .zero, style: .plain)
@@ -97,17 +93,6 @@ class DetailScreenViewController: UIViewController {
         stack.alignment = .fill
         return stack
     }()
-//    private lazy var buttonDelete: UIButton = {
-//       let button = UIButton(type: .system)
-//        button.imageEdgeInsets = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-//        button.imageView?.contentMode = .scaleAspectFit
-//        button.setImage(UIImage(named: "trash"), for: .normal)
-//        button.layer.cornerRadius = 28
-//        button.layer.borderColor = UIColor.gray.cgColor
-//        button.layer.borderWidth = 1
-//        button.addTarget(self, action: #selector(onDeletePress), for: .touchUpInside)
-//       return button
-//    }()
     private var contactID: String
     init(contactID: String) {
         self.contactID = contactID
@@ -120,6 +105,14 @@ class DetailScreenViewController: UIViewController {
     private func navigationDeleted() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "trash"), style: .plain, target: self, action: #selector(onDeletePress))
     }
+    private lazy var loadingView: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        indicator.startAnimating()
+        indicator.color = .black
+        indicator.isHidden = true
+        indicator.stopAnimating()
+        return indicator
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubviews()
@@ -138,17 +131,30 @@ class DetailScreenViewController: UIViewController {
         stackView.addArrangedSubview(buttonEncaminhar)
         view.addSubview(stackView)
         view.addSubview(tableViewDetail)
+        view.addSubview(loadingView)
+    }
+    private func showLoading(isActived: Bool) {
+        tableViewDetail.isHidden = isActived
+        loadingView.isHidden = !tableViewDetail.isHidden
+        if isActived {
+            loadingView.startAnimating()
+        } else {
+            loadingView.stopAnimating()
+        }
     }
     private func makeConstraints() {
         constraintImageViewContact()
         constraintLabelName()
         constraintLabelEmpresa()
         constraintSubView()
-        
+        constraintLoadingView()
         constraintTableViewDetail()
     }
     private func makeRequest() {
         let service = DetailService()
+        
+        showLoading(isActived: true)
+        
         service.getContact(contactId: contactID) { [weak self] result in
             switch result {
             case let .success(detailContact):
@@ -156,9 +162,14 @@ class DetailScreenViewController: UIViewController {
                 DispatchQueue.main.async {
                     self?.configureInformations(url: detailContact.photoURL ?? "", name: detailContact.name, company: detailContact.company ?? "")
                     self?.tableViewDetail.reloadData()
+                    self?.showLoading(isActived: false)
                 }
             case .failure(_):
                 print("deu erro")
+                self?.showLoading(isActived: false)
+                self?.showAlert(title: "Ops",
+                                message: "Não foi possível carregar as informações do contato",
+                                firstButtonTitle: "Ok")
             }
         }
     }
@@ -166,7 +177,10 @@ class DetailScreenViewController: UIViewController {
         //let url:URL = URL(string: "tel://123456789")!
         guard let url = URL(string: "tel://51994075096"),
               UIApplication.shared.canOpenURL(url) else {
-            print("não foi possível fazer a ligação")
+            print("não foi possível realizar esta ação")
+            showAlert(title: "Ops, parece que houve um problema",
+                            message: "Não foi possível utilizar esta ação pois estamos em um simulador",
+                            firstButtonTitle: "Ok")
             return
         }
         UIApplication.shared.open(url as URL)
@@ -190,11 +204,15 @@ class DetailScreenViewController: UIViewController {
         }
     }
     func deleteRequest() {
+        
+        showLoading(isActived: true)
+        
         let service = DetailService()
-        service.deleteContact(contactID: self.detailContact?.id ?? "") {[weak self] returno in
-            switch returno {
+        service.deleteContact(contactID: self.detailContact?.id ?? "") {[weak self] retorno in
+            switch retorno {
             case let .success(message):
                 DispatchQueue.main.async {
+                    self?.showLoading(isActived: false)
                     self?.showAlert(message: message, firstButtontHandler: { action in
                         self?.navigationController?.popViewController(animated: true)
                     })
@@ -204,6 +222,7 @@ class DetailScreenViewController: UIViewController {
                                 message: error.localizedDescription,
                                 firstButtontHandler: { action in
                     print("Falha")
+                    self?.showLoading(isActived: false)
                 })
             }
         }
@@ -211,8 +230,8 @@ class DetailScreenViewController: UIViewController {
     
     private func constraintImageViewContact() {
         imageViewContact.snp.makeConstraints { make in
-            make.top.equalTo(55)
-            make.bottom.equalToSuperview().inset(640)
+            make.top.equalTo(95)
+            make.bottom.equalToSuperview().inset(600)
             make.leading.equalToSuperview().offset(120)
             make.trailing.equalToSuperview().inset(120)
             make.centerX.equalToSuperview()
@@ -280,6 +299,11 @@ class DetailScreenViewController: UIViewController {
             make.top.equalTo(buttonCall.snp.bottom).offset(40)
         }
     }
+    private func constraintLoadingView() {
+        loadingView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
     //forma de como conectar itens de um modelo de dados aos componentes da célula
     
     //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -328,6 +352,9 @@ extension DetailScreenViewController: MFMailComposeViewControllerDelegate {
         @objc func sendEmail() {
         guard MFMailComposeViewController.canSendMail() else {
             print("erro ao enviar email")
+            showAlert(title: "Ops, parece que houve um problema",
+                            message: "Não foi possível utilizar esta ação pois estamos em um simulador",
+                            firstButtonTitle: "Ok")
             return
         }
         let composer = MFMailComposeViewController()
@@ -346,6 +373,9 @@ extension DetailScreenViewController: MFMessageComposeViewControllerDelegate {
             print("mensagem enviada")
         } else {
             print("erro ao enviar mensagem")
+            showAlert(title: "Ops, parece que houve um problema",
+                            message: "Não foi possível utilizar esta ação pois estamos em um simulador",
+                            firstButtonTitle: "Ok")
         }
     }
         func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {

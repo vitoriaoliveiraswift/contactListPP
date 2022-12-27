@@ -69,7 +69,11 @@ class ContactCell: UITableViewCell {
     }    
     func configureCell(base64Image: String, name: String, description: String?) {
         //let image = base64Image.
-       // contactImage.getPhoto(url: imageUrl)
+        if base64Image.isEmpty {
+            contactImage.image = UIImage(named: "guest")
+        } else {
+            contactImage.getPhoto(url: base64Image)
+        }
         contactLabel.text = name
         contactDescription.text = description
     }

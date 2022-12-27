@@ -4,7 +4,7 @@ import Photos
 import PhotosUI
 
 class AddContactsViewController: UIViewController {
-        
+    
     private var newImage: UIButton = {
         let image = UIButton()
         image.contentMode = UIView.ContentMode.scaleAspectFill
@@ -29,7 +29,7 @@ class AddContactsViewController: UIViewController {
         return name
     }()
     private var newSurname: UITextField = {
-       let surname = UITextField()
+        let surname = UITextField()
         surname.textAlignment = .center
         surname.font = .systemFont(ofSize: 20)
         surname.placeholder = "Sobrenome"
@@ -53,7 +53,7 @@ class AddContactsViewController: UIViewController {
         return company
     }()
     private var newNumber: UITextField = {
-       let number = UITextField()
+        let number = UITextField()
         number.textAlignment = .center
         number.font = .systemFont(ofSize: 20)
         number.placeholder = "Digite o número de celular"
@@ -66,7 +66,7 @@ class AddContactsViewController: UIViewController {
     }()
     
     private var newEmail: UITextField = {
-       let email = UITextField()
+        let email = UITextField()
         email.textAlignment = .center
         email.font = .systemFont(ofSize: 20)
         email.placeholder = "Digite o email"
@@ -78,7 +78,7 @@ class AddContactsViewController: UIViewController {
         return email
     }()
     private var newInstagram: UITextField = {
-       let instagram = UITextField()
+        let instagram = UITextField()
         instagram.textAlignment = .center
         instagram.font = .systemFont(ofSize: 20)
         instagram.placeholder = "Digite o instagram"
@@ -87,12 +87,12 @@ class AddContactsViewController: UIViewController {
         instagram.layer.borderWidth = 0.5
         instagram.layer.borderColor = UIColor.gray.cgColor
         instagram.keyboardType = .alphabet
-       return instagram
+        return instagram
     }()
     
     private func navigationItem() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cadastrar", style: .plain, target: self, action: #selector(signUpTapped))
-
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancelar", style: .plain, target: self, action: #selector(cancelTapped))
     }
     
@@ -106,7 +106,7 @@ class AddContactsViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
     }
     func addSubviews() {
         view.addSubview(newImage)
@@ -116,6 +116,7 @@ class AddContactsViewController: UIViewController {
         view.addSubview(newNumber)
         view.addSubview(newEmail)
         view.addSubview(newInstagram)
+        view.addSubview(loadingView)
     }
     func makeConstraints() {
         newImageConstraint()
@@ -125,6 +126,7 @@ class AddContactsViewController: UIViewController {
         newNumberConstraint()
         newEmailConstraint()
         newInstagramConstraint()
+        constraintLoadingView()
     }
     private func newImageConstraint() {
         newImage.snp.makeConstraints{ make in
@@ -165,7 +167,7 @@ class AddContactsViewController: UIViewController {
             make.top.equalTo(newCompany.snp.bottom).offset(55)
             make.leading.equalTo(15)
             make.trailing.equalTo(newSurname)
-
+            
         }
     }
     private func newEmailConstraint() {
@@ -184,46 +186,89 @@ class AddContactsViewController: UIViewController {
             make.trailing.equalTo(newEmail)
         }
     }
+    private func constraintLoadingView() {
+        loadingView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+    private lazy var loadingView: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        indicator.startAnimating()
+        indicator.color = .black
+        indicator.isHidden = true
+        indicator.stopAnimating()
+        return indicator
+    }()
     @objc func cancelTapped() {
         navigationController?.popViewController(animated: true)
     }
+    private func showLoading(isActived: Bool) {
+        view.isHidden = isActived
+        loadingView.isHidden = !view.isHidden
+        if isActived {
+            loadingView.startAnimating()
+        } else {
+            loadingView.stopAnimating()
+        }
+    }
     @objc func signUpTapped() {
-        
-        isFieldValid(fieldName: newName.placeholder ?? "", fieldValue: newName.text)
-        isFieldValid(fieldName: newSurname.placeholder ?? "", fieldValue: newSurname.text)
-        isEmailValid(emailValue: newEmail.text)
-        isNumberValid(numberValue: newNumber.text)
-        navigationController?.popViewController(animated: true)
-        
-        var informations:[ContactsInformationModel] = []
-        
-        if let phoneNumber = newNumber.text {
-            informations.append(ContactsInformationModel(key: "telefone", value: phoneNumber))
-        }
-        if let emailAdress = newEmail.text {
-            informations.append(ContactsInformationModel(key: "email", value: emailAdress))
-        }
-        if let instagramAdress = newInstagram.text {
-            informations.append(ContactsInformationModel(key: "instagram", value: instagramAdress))
-        }
-        
-        let contact = ContactsModel(id: "0",
-                                    name: newName.text ?? "",
-                                    photoURL: newImage.image(for: .normal)?.convertImageToBase64String(),
-                                    company: newCompany.text,
-                                    informations: informations)
-        
-        let service = AddConstactsService()
-        service.addContact(contact: contact) { retorno in
-            switch retorno {
-            case let .success(mensagem):
-                //adicionar alert exibindo mensagem
-                print(mensagem)
-            case let .failure(error):
-                //adicionar alert exibindo erro
-                print(error)
+        if isFieldValid(fieldName: newName.placeholder ?? "", fieldValue: newName.text),
+           isFieldValid(fieldName: newSurname.placeholder ?? "", fieldValue: newSurname.text),
+           isEmailValid(emailValue: newEmail.text),
+           isNumberValid(numberValue: newNumber.text) {
+            var fullName = ""
+            
+            if let newNameString = newName.text,
+               let newSurnameString = newSurname.text {
+                fullName = newNameString + " " + newSurnameString
+            }
+            
+            var informations:[ContactsInformationModel] = []
+            
+            if let phoneNumber = newNumber.text {
+                informations.append(ContactsInformationModel(key: "telefone", value: phoneNumber))
+            }
+            if let emailAdress = newEmail.text {
+                informations.append(ContactsInformationModel(key: "email", value: emailAdress))
+            }
+            if let instagramAdress = newInstagram.text {
+                informations.append(ContactsInformationModel(key: "instagram", value: instagramAdress))
+            }
+            
+            let contact = ContactsModel(id: "0",
+                                        name: fullName,
+                                        photoURL: "",//newImage.imageView?.image?.convertImageToBase64String(),
+                                        company: newCompany.text,
+                                        informations: informations)
+            
+            showLoading(isActived: true)
+            
+            let service = AddConstactsService()
+            service.addContact(contact: contact) { retorno in
+                switch retorno {
+                case let .success(mensagem):
+                    DispatchQueue.main.async {
+                        self.showLoading(isActived: false)
+                        //self.navigationController?.popViewController(animated: true)
+                        self.showAlert(message: mensagem ,firstButtonTitle: "Ok",firstButtontHandler: { action in
+                            self.navigationController?.popViewController(animated: true)
+                        })
+                    }
+                case let .failure(error):
+                    DispatchQueue.main.async {
+                        self.showLoading(isActived: false)
+                        self.showAlert(title: "Ops",
+                                       message: "Houve um problema ao adicionar novo contato, tente novamente mais tarde.",
+                                       firstButtonTitle: "Ok", firstButtontHandler: { action in
+                            self.navigationController?.popViewController(animated: true)
+                        })
+                        print(error)
+                    }
+                }
             }
         }
+        
+        
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -242,7 +287,6 @@ extension AddContactsViewController: UIImagePickerControllerDelegate, UINavigati
         },
                   secondButtonHandler: { _ in
             self.openGallery()
-            //alert.dismiss(animated: true, completion: nil)
         },
                   alertStyle: .actionSheet)
     }
@@ -253,7 +297,7 @@ extension AddContactsViewController: UIImagePickerControllerDelegate, UINavigati
             myPickerController.sourceType = .camera
             present(myPickerController, animated: true, completion: nil)
         } else {
-            showAlert(message: "Não foi possível abrir a câmera")
+            showAlert(title: "Ops", message: "Não foi possível abrir a câmera")
         }
     }
     func openGallery() {
@@ -305,8 +349,8 @@ extension AddContactsViewController {
             return isFieldValid(fieldName: "telefone", fieldValue: numberValue)
         }
         let numberRegEx = #"^\(?\d{3}\)?[ -]?\d{3}[ -]?\d{5}$"#
-            let numberPred = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
-            let isValid =  numberPred.evaluate(with: numberValue)
+        let numberPred = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
+        let isValid =  numberPred.evaluate(with: numberValue)
         if !isValid {
             showAlert(message: "Informe um número válido")
         }
@@ -316,11 +360,11 @@ extension AddContactsViewController {
         guard let emailValue = emailValue, !emailValue.isEmpty else {
             return true
         }
-
+        
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-            let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-            let isValid =  emailPred.evaluate(with: emailValue)
+        
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        let isValid =  emailPred.evaluate(with: emailValue)
         if !isValid {
             showAlert(message: "Informe um email válido")
         }

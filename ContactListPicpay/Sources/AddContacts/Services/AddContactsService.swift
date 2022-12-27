@@ -2,9 +2,14 @@ import UIKit
 
 final class AddConstactsService {
     
+    
+    
     private let baseURL = "https://637e66bccfdbfd9a63b05d28.mockapi.io/api/v1/contacts"
     
     func addContact(contact: ContactsModel, completion: @escaping (Result<String, Error>) -> Void) {
+        
+        
+        
         guard let url = URL(string: baseURL),
               let json = try? JSONEncoder().encode(contact)
         else {

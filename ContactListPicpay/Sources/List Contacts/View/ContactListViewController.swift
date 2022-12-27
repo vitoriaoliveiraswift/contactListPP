@@ -23,6 +23,11 @@ final class ContactListViewControler: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add, target: self, action: #selector(addTapped))
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        makeRequest()
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -30,7 +35,6 @@ final class ContactListViewControler: UIViewController {
         view.backgroundColor = .white
         addSubviews()
         makeConstraints()
-        makeRequest()
         navigationAdd()
     }
     private func addSubviews() {
@@ -76,6 +80,9 @@ final class ContactListViewControler: UIViewController {
             case .failure(_):
                 print("deu erro")
                 self?.showLoading(isActived: false)
+                self?.showAlert(title: "Ops",
+                                message: "Parece que houve um erro, não foi possível carregar os contatos",
+                                firstButtonTitle: "Ok")
             }
         }
     }
@@ -102,6 +109,7 @@ extension ContactListViewControler: UITableViewDataSource, UITableViewDelegate {
     }
     private func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.accessoryType = .disclosureIndicator
+        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as? ContactCell else {
